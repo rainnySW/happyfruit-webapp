@@ -4,14 +4,14 @@ import { useState, useEffect } from "react";
 
 // --- Mock Data (Fruit Menu) ---
 const MENU = [
-  { id: 1, imgSrc: "/api/images/watermelon", name: { th: "แตงโมหั่นชิ้น", en: "Fresh Watermelon" }, price: 20, desc: { th: "หวานฉ่ำ ดับกระหาย", en: "Sweet & juicy" } },
-  { id: 2, imgSrc: "/api/images/mango_sweet_sauce", name: { th: "มะม่วงน้ำปลาหวาน", en: "Mango & Sweet Sauce" }, price: 35, desc: { th: "เปรี้ยวอมหวาน เครื่องแน่น", en: "Sour with spicy dip" } },
-  { id: 3, imgSrc: "/api/images/pineapple", name: { th: "สับปะรดภูแล", en: "Phulae Pineapple" }, price: 25, desc: { th: "กรอบ หวานอมเปรี้ยว", en: "Crispy & sweet" } },
-  { id: 4, imgSrc: "/api/images/cantaloupe", name: { th: "แคนตาลูป", en: "Cantaloupe" }, price: 30, desc: { th: "หอมหวาน ชื่นใจ", en: "Aromatic & sweet" } },
-  { id: 5, imgSrc: "/api/images/strawberry_dip", name: { th: "สตรอว์เบอร์รีคลุกพริกเกลือ", en: "Strawberry with Dip" }, price: 45, desc: { th: "เปรี้ยวจี๊ดจ๊าด โดนใจ", en: "Sour & spicy" } },
-  { id: 6, imgSrc: "/api/images/guava_plum", name: { th: "ฝรั่งแช่บ๊วย", en: "Guava Plum" }, price: 25, desc: { th: "กรอบอร่อย คลุกผงบ๊วย", en: "Crispy with plum powder" } },
-  { id: 7, imgSrc: "/api/images/coconut", name: { th: "มะพร้าวน้ำหอม", en: "Fresh Coconut" }, price: 40, desc: { th: "หอมหวานชื่นใจ", en: "Refreshing sweet coconut water" } },
-  { id: 8, imgSrc: "/api/images/orange", name: { th: "ส้มเขียวหวาน", en: "Sweet Orange" }, price: 30, desc: { th: "ปอกเปลือกพร้อมทาน", en: "Peeled and ready to eat" } },
+  { id: 1, imgSrc: "/images/watermelon.jpg", name: { th: "แตงโมหั่นชิ้น", en: "Fresh Watermelon" }, price: 20, desc: { th: "หวานฉ่ำ ดับกระหาย", en: "Sweet & juicy" } },
+  { id: 2, imgSrc: "/images/mango_sweet_sauce.jpg", name: { th: "มะม่วงน้ำปลาหวาน", en: "Mango & Sweet Sauce" }, price: 35, desc: { th: "เปรี้ยวอมหวาน เครื่องแน่น", en: "Sour with spicy dip" } },
+  { id: 3, imgSrc: "/images/pineapple.jpg", name: { th: "สับปะรดภูแล", en: "Phulae Pineapple" }, price: 25, desc: { th: "กรอบ หวานอมเปรี้ยว", en: "Crispy & sweet" } },
+  { id: 4, imgSrc: "/images/cantaloupe.jpg", name: { th: "แคนตาลูป", en: "Cantaloupe" }, price: 30, desc: { th: "หอมหวาน ชื่นใจ", en: "Aromatic & sweet" } },
+  { id: 5, imgSrc: "/images/strawberry_dip.jpg", name: { th: "สตรอว์เบอร์รีคลุกพริกเกลือ", en: "Strawberry with Dip" }, price: 45, desc: { th: "เปรี้ยวจี๊ดจ๊าด โดนใจ", en: "Sour & spicy" } },
+  { id: 6, imgSrc: "/images/guava_plum.jpg", name: { th: "ฝรั่งแช่บ๊วย", en: "Guava Plum" }, price: 25, desc: { th: "กรอบอร่อย คลุกผงบ๊วย", en: "Crispy with plum powder" } },
+  { id: 7, imgSrc: "/images/coconut.jpg", name: { th: "มะพร้าวน้ำหอม", en: "Fresh Coconut" }, price: 40, desc: { th: "หอมหวานชื่นใจ", en: "Refreshing sweet coconut water" } },
+  { id: 8, imgSrc: "/images/orange.jpg", name: { th: "ส้มเขียวหวาน", en: "Sweet Orange" }, price: 30, desc: { th: "ปอกเปลือกพร้อมทาน", en: "Peeled and ready to eat" } },
 ];
 
 // --- Dictionaries (i18n) ---
